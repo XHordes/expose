@@ -8,7 +8,7 @@ fetch("https://hordes.io/client.js").then(r=>r.text()).then((script)=>{
     let newSum = md5(script) 
     if (newSum !== checksum) {
         //remove the enclosing function
-        script = script.replace("!function(){", "")
+        script = script.replace("!function(){\"use strict\";", "\"use strict\";console.log('Stripped client.js successfully loaded');")
         script = script.replace("}();", "")
         fs.writeFileSync("build/client.js", script)
 
