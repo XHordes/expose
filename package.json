@@ -1,0 +1,23 @@
+{
+  "name": "xhordes-expose",
+  "version": "1.0.0",
+  "description": "A script that exposes the hordes functions and saves them to a file for use by XHordes",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LegusX/xhordes-expose.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LegusX/xhordes-expose/issues"
+  },
+  "homepage": "https://github.com/LegusX/xhordes-expose#readme",
+  "dependencies": {
+    "md5": "^2.3.0",
+    "node-fetch": "^2.6.1"
+  }
+}
